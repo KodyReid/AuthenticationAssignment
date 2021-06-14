@@ -1,0 +1,49 @@
+<!--  File Name: projects.ejs
+      Name: Kody Reid
+      Student Number: 301164732
+      Date: June 1, 2021
+-->
+
+<%- include partials/header.ejs %>
+
+
+<%- include partials/main_nav.ejs %>
+  
+<!-- Projects Page Content -->
+
+<main class="container">
+  <div class="jumbotron">
+    <div id="title">  
+      <h1 class="display-4">Welcome to the <%= title %> page!</h1>
+    </div>
+    <div class="container">
+      <br>   
+      <div class="gallery">
+        <a target="_blank" href="http://studentweb.cencol.ca/kreid66/Comp213F20/term%20project/index.html">
+          <img src="public\Assets\images\termProject.jpg" alt="Term Project" width="600" height="400">
+        </a>
+        <div class="desc">COMP213 Term Project</div>
+      </div>
+      <br>
+        <div class="gallery">
+          <a target="_blank" href="http://studentweb.cencol.ca/kreid66/COMP125%20-%20ClientSide/Assignment03/index.html#">
+            <img src="public\Assets\images\photoGallery.jpg" alt="Gallery" width="600" height="400">
+          </a>
+          <div class="desc">Basic Photo Gallery</div>
+        </div>
+        <br>
+          <div class="gallery">
+            <a target="_blank" href="http://studentweb.cencol.ca/kreid66/Comp213F20/Assignment%204/assignment4.html">
+              <img src="public\Assets\images\feedbackForm.jpg" alt="Feedback Form" width="600" height="400">
+            </a>
+          <div class="desc">Feedback Form</div>
+          </div>
+          
+    </div>       
+  </div>   
+</main>
+  
+<%- include partials/bottom_nav.ejs %>
+
+
+<%- include partials/footer.ejs %>

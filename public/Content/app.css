@@ -1,0 +1,84 @@
+/*  File Name: app.css
+    Name: Kody Reid
+    Student Number: 301164732
+    Date: June 1, 2021
+*/
+
+
+
+body { 
+    padding-bottom: 95px; 
+}
+#photo {
+    text-align: center;
+}
+#title{
+    text-align: center;
+}
+#profileText{
+    background-color: #d5e1df;
+    border-radius: 5px;
+}
+#bodyText{
+    background-color: #d5e1df;
+    border-radius: 5px;
+    font-size: 2em;
+}
+#missionText{
+    background-color: #d5e1df;
+    border-radius: 5px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+div.gallery {
+        
+    margin: auto;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 680px;
+    border-radius: 5px;
+}
+  
+div.gallery:hover {
+    text-align: center;
+    border:5px solid #777;
+    border-radius: 5px;
+}
+  
+div.gallery img {
+    
+    text-align: center;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+  
+div.desc {
+    text-align: center;
+    padding: 15px;
+    
+}
+#txtBoxLoc{
+    margin-left: 5px;
+}
+#txtBox2Loc{
+    margin-left: 10px;
+}
+#txtBox3Loc{
+    margin-left: 5px;
+}
+#inputBtn {
+    margin-left: 50px;
+}
+#button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contactText {    
+    text-align: center;
+}
+#contactBox{
+    background-color: #d5e1df;
+}

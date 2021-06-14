@@ -1,0 +1,20 @@
+{
+  "name": "express_portfolio",
+  "version": "0.0.1",
+  "private": true,
+    "scripts": {
+    "start": "node ./server.js"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jquery": "^3.6.0",
+    "morgan": "~1.9.1",
+    "popper.js": "^1.16.1"
+  }
+}

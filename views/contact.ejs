@@ -1,0 +1,55 @@
+<!--  File Name: contact.ejs
+      Name: Kody Reid
+      Student Number: 301164732
+      Date: June 1, 2021
+-->
+
+<%- include partials/header.ejs %>
+
+
+<%- include partials/main_nav.ejs %>
+  
+<!-- Contact Page Content -->
+
+<main class="container">
+  <div id="title">  
+    <h1 class="display-4">Welcome to the <%= title %> page!</h1>
+  </div>
+
+  <!-- Begin Form -->    
+  <form target="_blank" action="mailto:kreid66@my.centennialcollege.ca" method="post">
+    <h2 id="title">Fill out the form and i'll be in touch.</h2>
+    <br>
+      <div class="container" id="contactText">
+	      <div id="contactBox">
+          <br>
+	        <label>Name:</label>
+	        <input id="txtBoxLoc" name="txtName" size="25" tabindex="1" type="text" required="required"><br><br>
+	        <label>Email:</label>
+	        <input id="txtBox2Loc" name="txtEmail" size="25" tabindex="3" type="text" required="required"><br><br>
+	        <label>Phone Number:</label>
+	        <input id="txtBox3Loc" name="txtPhone" size="25" tabindex="5" type="text" required="required"><br>
+  
+  	      <br>
+	        <label id="txtBoxlocation4">Comments:</label>
+	        <textarea cols="50" name="txtCmmnt" rows="7" tabindex="37" placeholder="Tell me what you're looking for!"></textarea>
+	        <br>
+          <br>
+            <div id="button">
+              <input id="inputBtn" name="btnSubmit" tabindex="39" type="submit" value="Submit Form">
+              <input id="resetBtn" name="btnReset" tabindex="41" type="reset" value="Clear Form">
+              <br>
+              <br>
+            </div>
+        </div>
+      </div>  
+  </form>
+  
+</main>
+  
+<%- include partials/bottom_nav.ejs %>
+
+
+<%- include partials/footer.ejs %>
+
+  

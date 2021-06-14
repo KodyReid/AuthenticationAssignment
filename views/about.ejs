@@ -1,0 +1,47 @@
+<!--  File Name: about.ejs
+      Name: Kody Reid
+      Student Number: 301164732
+      Date: June 1, 2021
+-->
+
+<%- include partials/header.ejs %>
+
+
+<%- include partials/main_nav.ejs %>
+  
+<!-- About Page Content -->
+
+<main class="container">
+  <div id="title">  
+    <h1 class="display-4">Welcome to the <%= title %> page!</h1>
+  </div>
+  
+  <div class="container">
+    <br>
+    <div id="photo">
+    <img src="/public/Assets/images/selfImage.jpg" alt="Kody Reid" >
+        
+  </div>
+  
+  <div class="container" id="profileText">
+    <p></p>
+    <h2 class="display-6">Author Profile:</h2>
+      <div id="text">
+        <ul>
+          <li>Name: Kody Reid</li>
+          <li>Loaction: Thunder Bay, ON</li>
+          <li>Occupation: Centennial College Student - Semester 3</li>
+          <li>Course: Comp229</li>
+          <p>My name is Kody Reid and I am a 3rd semester student studying online at Centennial College. I currently live in Thunder Bay, Ontario with my wife and 2 dogs. 
+             When not in front of a computer screen learning and tinkering with different coding languages, 
+             I can usually be found playing games or outside enjoying everything beautiful Northwestern Ontario has to offer.
+          </p>
+             Resume: <a href="https://onedrive.live.com/embed?cid=A6310A8835ED4336&resid=A6310A8835ED4336%21875&authkey=ANXwGI4-MG62vu0&em=2">Click Here</a>   
+      </div>
+  </div>
+</main>
+  
+<%- include partials/bottom_nav.ejs %>
+
+
+<%- include partials/footer.ejs %>

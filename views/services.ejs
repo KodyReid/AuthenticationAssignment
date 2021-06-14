@@ -1,0 +1,51 @@
+<!--  File Name: services.ejs
+      Name: Kody Reid
+      Student Number: 301164732
+      Date: June 1, 2021
+-->
+
+<%- include partials/header.ejs %>
+
+
+<%- include partials/main_nav.ejs %>
+  
+<!-- Services Page Content -->
+
+<main class="container">
+  <div class="jumbotron">
+    <div id="title">  
+      <h1 class="display-4">Welcome to the <%= title %> page!</h1>
+    </div>
+      
+    <div class="container" id="bodyText">
+      <p>
+         While I am still learning and completing my schooling, I have the following services to offer:
+      </p>
+    </div>
+    <div class="gallery">
+      <a target="_blank">
+        <img src="public\Assets\images\devPhoto.jpg" alt="Web Dev" width="600" height="400">
+      </a>
+      <div class="desc">Web Development</div>
+    </div>
+    <br>
+    <div class="gallery">
+      <a target="_blank" >
+        <img src="public\Assets\images\buildsPhoto.jpg" alt="Builds" width="600" height="400">
+      </a>
+      <div class="desc">Computer Builds</div>
+    </div>
+    <br>
+    <div class="gallery">
+      <a target="_blank" >
+        <img src="public\Assets\images\carpenterPhoto.jpg" alt="Carpentry" width="600" height="400">
+      </a>
+      <div class="desc">Carpentry Work</div>
+    </div>
+  </div> 
+</main>
+  
+<%- include partials/bottom_nav.ejs %>
+
+
+<%- include partials/footer.ejs %>

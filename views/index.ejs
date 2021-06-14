@@ -1,0 +1,56 @@
+<!--  File Name: index.ejs
+      Name: Kody Reid
+      Student Number: 301164732
+      Date: June 1, 2021
+-->
+
+<%- include partials/header.ejs %>
+
+
+<%- include partials/main_nav.ejs %>
+  
+<!-- Main Page Content -->
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 id="title" class="display-4">Welcome to the <%= title %> page!</h1>
+      
+    <div id="banner">
+          <p>Hello, World!</p>
+    </div>
+      <div class="container" id="bodyText">
+            <p>
+              This is the home landing page for my portfolio site. 
+              From this page you will be able to navigate to different areas of the web application to learn more about me!
+              As my skills evolve, so will this page so check back often!
+            </p>
+      </div>
+      <div class="container" id="missionText">
+            <p>My mission satement to you:</p> 
+              <p>Hard work pays off, no matter the age or situation. 
+                 If you work for something, it CAN happen!</p> 
+            
+      </div>
+    </div>
+    <div class="gallery">
+      <a target="_blank">
+      <img src="public\Assets\images\sleepingGiant.jpg" alt="Mountain" width="600" height="400">
+      </a>
+        <div class="desc">Beautiful view of the Sleeping Giant as seen from the Thunder Bay marina.
+        </div>
+    </div>
+  </div>
+</main>
+  
+<%- include partials/bottom_nav.ejs %>
+
+
+<%- include partials/footer.ejs %>
+
+
+
+
+
+
+
+
