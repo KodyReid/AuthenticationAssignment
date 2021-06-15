@@ -4,10 +4,11 @@
       Date: June 1, 2021
 -->
 
-<%- include partials/header.ejs %>
+<!--Nav+Meta Section-->
+<header>
+  <%- include('./components/header.ejs') %>
+</header>
 
-
-<%- include partials/main_nav.ejs %>
   
 <!-- About Page Content -->
 
@@ -41,7 +42,9 @@
   </div>
 </main>
   
-<%- include partials/bottom_nav.ejs %>
+<!--Bottom Footer-->
+<%- include('./components/bottom_nav.ejs') %>
 
+<!--Bottom Nav-->
+<%- include('./components/footer.ejs') %>
 
-<%- include partials/footer.ejs %>
