@@ -2,7 +2,7 @@
   "name": "express_portfolio",
   "version": "0.0.1",
   "private": true,
-    "scripts": {
+  "scripts": {
     "start": "node ./server.js"
   },
   "dependencies": {
@@ -14,6 +14,7 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jquery": "^3.6.0",
+    "mongoose": "^5.12.13",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
   }
