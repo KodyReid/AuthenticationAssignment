@@ -13,7 +13,7 @@ router.get('/', (req, res, next) => {
         }
         else
         {
-            console.log(ContactList);
+           res.render('contactList', {title: 'Contact List', ContactList: ContactList}) 
         }
     });
 });
