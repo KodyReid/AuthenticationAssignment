@@ -1,0 +1,57 @@
+<!--  File Name: contactList.ejs
+      Name: Kody Reid
+      Student Number: 301164732
+      Date: June 15, 2021
+-->
+
+<!--Nav+Meta Section-->
+
+<%- include('../components/header.ejs') %>
+  
+<!-- Contact List Page Content -->
+
+<main class="container">
+<div class="row" id="contactList">
+    <div class="col-offset-md-1 col-md-10">
+        <h1><%= title %></h1>
+        <a href="/contact-list/add" class="btn btn-primary" role="button">
+        <i class="fas fa-plus-circle"></i> Add a Contact</a>
+        <br>
+        <table class="table table-bordered table-striped table-hover">
+            <!-- Table Header Row-->
+            <tr class ="">
+                <th class="text-center">Name</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">Password</th>
+                <th class="text-center"></th>
+                <th class="text-center"></th>
+                 
+            </tr>
+
+            <!-- Repeatable Template Row-->
+
+            <% for(let count = 0; count < ContactList.length; count++){ %>
+                <tr class="">
+                    <td class="text-center"><%= ContactList[count].name %></td>
+                    <td class="text-center"><%= ContactList[count].email %></td>
+                    <td class="text-center"><%= ContactList[count].password %></td>
+                    <td class="text-center">
+                        <a href="/contact-list/edit/<%= ContactList[count]._id %>" class="btn btn-primary">
+                        <i class="fas fa-pencil-alt"></i> Edit</a>
+                    </td>        
+                    <td class="text-center">                    
+                        <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-danger">
+                        <i class="fas fa-trash-alt"></i> Delete</a>
+                    </td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</div>
+</main> 
+
+<!--Bottom Footer-->
+<%- include('../components/bottom_nav.ejs') %>
+
+<!--Bottom Nav-->
+<%- include('../components/footer.ejs') %>
