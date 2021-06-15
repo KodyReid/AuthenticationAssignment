@@ -4,11 +4,12 @@
       Date: June 1, 2021
 -->
 
-<%- include partials/header.ejs %>
 
+  <!--Nav Section-->
+  <header>
+    <%- include('./components/header.ejs') %>
+  </header>
 
-<%- include partials/main_nav.ejs %>
-  
 <!-- Main Page Content -->
 
 <main class="container">
@@ -41,11 +42,12 @@
     </div>
   </div>
 </main>
-  
-<%- include partials/bottom_nav.ejs %>
 
+<!--Bottom Footer-->
+<%- include('./components/bottom_nav.ejs') %>
 
-<%- include partials/footer.ejs %>
+<!--Bottom Nav-->
+<%- include('./components/footer.ejs') %>
 
 
 
