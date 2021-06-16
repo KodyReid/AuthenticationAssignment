@@ -1,7 +1,5 @@
-#!/usr/bin/env node
-
-/*    File Name: bottom_nav.js
-      Name: Kody Reid
+/*    File Name: server.js
+      Author: Kody Reid
       Student Number: 301164732
       Date: June 1, 2021
 */
@@ -18,7 +16,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3600');
+var port = normalizePort(process.env.PORT || '3700');
 app.set('port', port);
 
 /**

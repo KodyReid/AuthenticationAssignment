@@ -1,41 +1,31 @@
 /*  File Name: index.js
-    Name: Kody Reid
+    Author: Kody Reid
     Student Number: 301164732
     Date: June 1, 2021
 */
 
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
+
+let indexController = require('../controllers/index'); //referencing the index controller
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+router.get('/', indexController.displayHomePage);
 
 /* GET home page. */
-router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home'});
-});
+router.get('/home', indexController.displayHomePage);
 
 /* GET About Me page. */
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About Me' });
-});
+router.get('/about', indexController.displayAboutPage);
 
 /* GET Projects page. */
-router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'My Projects' });
-});
+router.get('/projects', indexController.displayProjectsPage);
 
 /* GET Services page. */
-router.get('/services', function(req, res, next) {
-  res.render('services', { title: 'My Services' });
-});
+router.get('/services', indexController.displayServicesPage);
 
 /* GET Contact Me page. */
-router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact Info' });
-});
+router.get('/contact', indexController.displayContactInfoPage);
 
 
 module.exports = router;
