@@ -1,4 +1,4 @@
-<!--  File Name: add.ejs
+<!--  File Name: edit.ejs
       Author: Kody Reid
       Student Number: 301164732
       Date: June 15, 2021
@@ -9,8 +9,55 @@
 <%- include('../components/header.ejs') %>
   
 
-<!-- Contact Add Page Content -->
 
+<!-- Contact Edit Page Content -->
+
+<div class="container">
+      <div class="row">
+          <div class="offset-md-3 col-md-6">
+          <h1><%= title %></h1>
+          
+            <form class="form" method="POST">
+            
+                  <div class="form-group">
+                        <label for="nameTextField">Name:</label>
+                        <input type="text" class="form-control"
+                        id="nameTextField" 
+                        placeholder="Please enter your name" 
+                        name="name" 
+                        value="<%= contact.name %>" 
+                        required>
+                  </div>
+                  
+                  <div class="form-group">
+                        <label for="emailTextField">E-mail:</label>
+                        <input type="text" class="form-control" 
+                        id="emailTextField" 
+                        placeholder="Please enter your email" 
+                        name="email" 
+                        value="<%= contact.email %>"
+                        required>
+                  </div>
+                  
+                  <div class="form-group">
+                        <label for="passwordTextField">Password:</label>
+                        <input type="text" class="form-control" 
+                        id="passwordTextField" 
+                        placeholder="Please enter your password" 
+                        name="password" 
+                        value="<%= contact.password %>"
+                        required>
+                  </div>
+                  <br>
+                  <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-edit"></i> Edit</button>
+            
+                        <a href="/contact-list" class="btn btn-warning">
+                              <i class="fas fa-undo"></i> Cancel</a>
+            </form>
+      </div>
+      </div>
+  </div>   
 
 
 <!--Bottom Footer-->

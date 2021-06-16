@@ -34,6 +34,7 @@ router.get('/add', (req, res, next) => {
 });
 
 //POST route for processing contact ADD page - CREATE op
+
 router.post('/add', (req, res, next) => {
     let newContact = Contact({
         "name": req.body.name,
@@ -75,7 +76,7 @@ router.get('/edit/:id', (req, res, next) => {
     });
 });
 
-//POST route for displaying contact EDIT page - update op
+//POST route for processing contact EDIT page - update op
 router.post('/edit/:id', (req, res, next) => {
     let id = req.params.id
     
