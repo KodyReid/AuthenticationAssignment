@@ -70,7 +70,7 @@ router.get('/edit/:id', (req, res, next) => {
         }
         else
         {
-            res.render('contact/edit',{title: 'Edit Contact', contact: contactToEdit});
+            res.render('edit',{title: 'Edit Contact', contact: contactToEdit});
         }
     });
 });
