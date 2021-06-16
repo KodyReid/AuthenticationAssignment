@@ -1,3 +1,9 @@
+/*    File Name: contact.ejs
+      Author: Kody Reid
+      Student Number: 301164732
+      Date: June 15, 2021
+*/
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -9,24 +15,26 @@ let Contact = require('../models/contact');
 //GET route for contact list page - read op
 router.get('/', (req, res, next) => {
     Contact.find((err, ContactList)=>{
-        if(err){
+        if(err)
+        {
             return console.error(err);
         }
         else
         {
-           res.render('contact/list', {title: 'Contact List', ContactList: ContactList});
+           res.render('list', {title: 'Contact List', ContactList: ContactList});
         }
     });
 });
 
 
-//GET route for displayingcontact add page - create op
-router.get('contact/add', (req, res, next) => {
-    res.render('contact/list', {title: 'Add Contact'});
+/* GET route for displaying contact add page - create op*/
+
+router.get('/add', (req, res, next) => {
+    res.render('add', {title: 'Add Contact'});
 });
 
 //POST route for displayingcontact add page - create op
-router.post('contact/add', (req, res, next) => {
+router.post('/add', (req, res, next) => {
     let newContact = Contact({
         "name": req.body.name,
         "email": req.body.email,
@@ -43,7 +51,7 @@ router.post('contact/add', (req, res, next) => {
         else
         {
             //refresh contact list
-            res.redirect('/contact-list');
+            res.redirect('/add');
         }
 
     });
@@ -88,7 +96,7 @@ router.post('/edit/:id', (req, res, next) => {
         else
         {
             //refresh contact-list
-            res.redirect('/contact-list');
+            res.redirect('contact/edit');
         }
     });
 });
@@ -106,7 +114,7 @@ router.get('/delete/:id', (req, res, next) => {
         else
         {
             //refresh contact-list
-            res.redirect('/contact-list');
+            res.redirect('contact/edit');
         }
 
     });

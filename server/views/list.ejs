@@ -1,12 +1,12 @@
-<!--  File Name: contactList.ejs
-      Name: Kody Reid
+<!--  File Name: list.ejs
+      Author: Kody Reid
       Student Number: 301164732
       Date: June 15, 2021
 -->
 
 <!--Nav+Meta Section-->
 
-<%- include('../components/header.ejs') %>
+<%- include('./components/header.ejs') %>
   
 <!-- Contact List Page Content -->
 
@@ -40,7 +40,7 @@
                         <i class="fas fa-pencil-alt"></i> Edit</a>
                     </td>        
                     <td class="text-center">                    
-                        <a href="/contact-list/delete/<%= ContactList[count]._id %>" class="btn btn-danger">
+                        <a href="/contact/delete/<%= ContactList[count]._id %>" class="btn btn-danger">
                         <i class="fas fa-trash-alt"></i> Delete</a>
                     </td>
                 </tr>
@@ -51,7 +51,7 @@
 </main> 
 
 <!--Bottom Footer-->
-<%- include('../components/bottom_nav.ejs') %>
+<%- include('./components/bottom_nav.ejs') %>
 
 <!--Bottom Nav-->
-<%- include('../components/footer.ejs') %>
+<%- include('./components/footer.ejs') %>

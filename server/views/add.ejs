@@ -1,0 +1,45 @@
+<!--  File Name: add.ejs
+      Author: Kody Reid
+      Student Number: 301164732
+      Date: June 15, 2021
+-->
+
+<!--Nav+Meta Section-->
+
+<%- include('./components/header.ejs') %>
+  
+
+<!-- Contact Add Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6"></div>
+        <h1><%= title %></h1>
+        <form class="form" method="POST"></form>
+        <div class="form-group">
+            <label for="nameTextField">Name</label>
+            <input type="text" class="form-control" id="nameTextField" placeholder="Please enter your name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="emailTextField">E-mail</label>
+            <input type="text" class="form-control" id="emailTextField" placeholder="Please enter your email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="passwordTextField">Password</label>
+            <input type="text" class="form-control" id="passwordTextField" placeholder="Please enter your password" name="name" required>
+        </div>
+
+        <button class="btn btn-primary" type="submit">
+            <i class="fas fa-edit"></i>Submit</button>
+        <a href="/contact-list" class="btn btn-warning"><i class="fas fa-undo"></i>Cancel</a>
+    </div>
+</div>   
+
+
+
+<!--Bottom Footer-->
+<%- include('./components/bottom_nav.ejs') %>
+
+<!--Bottom Nav-->
+<%- include('./components/footer.ejs') %>
