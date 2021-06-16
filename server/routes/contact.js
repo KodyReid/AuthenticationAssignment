@@ -21,19 +21,19 @@ router.get('/', (req, res, next) => {
         }
         else
         {
-           res.render('list', {title: 'Contact List', ContactList: ContactList});
+           res.render('contact/list', {title: 'Contact List', ContactList: ContactList});
         }
     });
 });
 
 
-/* GET route for displaying contact add page - create op*/
+/* GET route for displaying contact ADD page - CREATE op*/
 
 router.get('/add', (req, res, next) => {
-    res.render('add', {title: 'Add Contact'});
+    res.render('contact/add', {title: 'Add Contact'});
 });
 
-//POST route for displayingcontact add page - create op
+//POST route for processing contact ADD page - CREATE op
 router.post('/add', (req, res, next) => {
     let newContact = Contact({
         "name": req.body.name,
@@ -51,13 +51,13 @@ router.post('/add', (req, res, next) => {
         else
         {
             //refresh contact list
-            res.redirect('/add');
+            res.redirect('/contact-list');
         }
 
     });
 });
 
-//GET route for displayingcontact edit page - update op
+//GET route for displaying contact EDIT page - update op
 router.get('/edit/:id', (req, res, next) => {
     let id = req.params.id;
 
@@ -70,12 +70,12 @@ router.get('/edit/:id', (req, res, next) => {
         }
         else
         {
-            res.render('edit',{title: 'Edit Contact', contact: contactToEdit});
+            res.render('contact/edit',{title: 'Edit Contact', contact: contactToEdit});
         }
     });
 });
 
-//POST route for displayingcontact edit page - update op
+//POST route for displaying contact EDIT page - update op
 router.post('/edit/:id', (req, res, next) => {
     let id = req.params.id
     
@@ -96,7 +96,7 @@ router.post('/edit/:id', (req, res, next) => {
         else
         {
             //refresh contact-list
-            res.redirect('contact/edit');
+            res.redirect('/contact-list');
         }
     });
 });
@@ -114,7 +114,7 @@ router.get('/delete/:id', (req, res, next) => {
         else
         {
             //refresh contact-list
-            res.redirect('contact/edit');
+            res.redirect('/contact-list');
         }
 
     });
