@@ -1,9 +1,9 @@
 //require modules for user model
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
-let passportSteam = require('passport-steam');
-let passportSpotify = require('passport-spotify');
-let passportMicrosoft = require('passport-microsoft');
+
+
+
 
 let User = mongoose.Schema(
     {
@@ -55,6 +55,6 @@ let User = mongoose.Schema(
 
 let options = ({ missingPasswordError: 'Incorrect or Missing Password'});
 
-User.plugin(passportLocalMongoose. options);
+User.plugin(passportLocalMongoose, options);
 
 module.exports.User = mongoose.model('User', User); 
