@@ -1,7 +1,7 @@
 /*  File Name: app.js
       Name: Kody Reid
       Student Number: 301164732
-      Date: June 1, 2021
+      Date: June 16, 2021
 */
 
 // installed 3rd party packages

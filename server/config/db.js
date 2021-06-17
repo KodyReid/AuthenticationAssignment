@@ -1,3 +1,9 @@
+/*  File Name: db.js
+    Author: Kody Reid
+    Student Number: 301164732
+    Date: June 16, 2021
+*/
+
 module.exports = 
 {
     //"URI": "mongodb://localhost/contacts"

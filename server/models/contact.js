@@ -1,3 +1,9 @@
+/*  File Name: users.js
+    Author: Kody Reid
+    Student Number: 301164732
+    Date: June 16, 2021
+*/
+
 let mongoose = require('mongoose');
 
 //create model class

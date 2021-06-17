@@ -1,7 +1,7 @@
-/*  File Name: index.js
-    Author: Kody Reid
-    Student Number: 301164732
-    Date: June 1, 2021
+/*      File Name: index.js
+        Author: Kody Reid
+        Student Number: 301164732
+        Date: June 1, 2021
 */
 
 

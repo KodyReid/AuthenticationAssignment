@@ -1,5 +1,5 @@
 /*  File Name: users.js
-    Name: Kody Reid
+    Author: Kody Reid
     Student Number: 301164732
     Date: June 1, 2021
 */
