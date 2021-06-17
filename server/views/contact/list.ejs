@@ -25,7 +25,7 @@
             <tr class ="">
                 <th class="text-center">Name</th>
                 <th class="text-center">Email</th>
-                <th class="text-center">Password</th>
+                <th class="text-center">Contact Number</th>
                 <% if(typeof displayName == 'string' && displayName) { %>
                     <th class="text-center"></th>
                     <th class="text-center"></th>
@@ -38,7 +38,7 @@
                 <tr class="">
                     <td class="text-center"><%= ContactList[count].name %></td>
                     <td class="text-center"><%= ContactList[count].email %></td>
-                    <td class="text-center"><%= ContactList[count].password %></td>
+                    <td class="text-center"><%= ContactList[count].number %></td>
                     
                     <% if(typeof displayName == 'string' && displayName) { %>
                         <td class="text-center">

@@ -11,7 +11,7 @@ let mongoose = require('mongoose');
 let contactModel = mongoose.Schema({
     name: String,
     email: String,
-    password: String
+    number: String
 },
 {
     collection: "contacts"
