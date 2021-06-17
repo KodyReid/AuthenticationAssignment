@@ -1,9 +1,13 @@
 {
-  "name": "express_portfolio-P2",
+  "name": "express_portfolio_continued",
   "version": "0.0.3",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines":{
+    "node": "^12.18.3",
+    "npm": "^6.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
