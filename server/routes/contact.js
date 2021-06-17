@@ -9,6 +9,7 @@ let router = express.Router();
 let mongoose = require('mongoose');
 const contact = require('../models/contact');
 let passport = require('passport');
+let jwt = require('jsonwebtoken');
 
 let contactController = require('../controllers/contact');
 

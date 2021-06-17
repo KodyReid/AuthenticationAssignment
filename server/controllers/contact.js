@@ -7,6 +7,9 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
+let jwt = require('jsonwebtoken');
+
+
 // create reference to database schema
 let Contact = require('../models/contact');
 

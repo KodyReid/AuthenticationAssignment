@@ -12,8 +12,8 @@
 
 <main class="container">
 <div class="row" id="contactList">
-    <div id="title" class="col-offset-md-1 col-md-10">
-        <h1><%= title %></h1>
+    <div class="col-offset-md-1 col-md-10">
+        <h1 id="title"><%= title %></h1>
 
         <% if(typeof displayName == 'string' && displayName) { %>
         <a href="/contact-list/add" class="btn btn-primary" role="button">
