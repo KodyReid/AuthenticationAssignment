@@ -8,27 +8,37 @@ let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 const contact = require('../models/contact');
+let passport = require('passport');
 
-//connect to contact model
-let Contact = require('../models/contact');
 let contactController = require('../controllers/contact');
+
+//helper function for guarding
+function requireAuth(req, res, next)
+{
+      //check for login
+      if(!req.isAuthenticated())
+      {
+            return res.redirect('/login');
+      }
+      next();
+}
 
 //GET route for contact list page - read op
 router.get('/', contactController.displayContactList);
 
 /* GET route for displaying contact ADD page - CREATE op*/
-router.get('/add', contactController.displayAddPage);
+router.get('/add', requireAuth, contactController.displayAddPage);
 
 //POST route for processing contact ADD page - CREATE op
-router.post('/add', contactController.processAddPage);
+router.post('/add', requireAuth, contactController.processAddPage);
 
 //GET route for displaying contact EDIT page - update op
-router.get('/edit/:id', contactController.displayEditPage);
+router.get('/edit/:id', requireAuth, contactController.displayEditPage);
 
 //POST route for processing contact EDIT page - update op
-router.post('/edit/:id', contactController.processEditPage);
+router.post('/edit/:id', requireAuth, contactController.processEditPage);
 
 //GET to perform contact deletion  - delete op
-router.get('/delete/:id', contactController.performDelete);
+router.get('/delete/:id', requireAuth, contactController.performDelete);
 
 module.exports = router;
