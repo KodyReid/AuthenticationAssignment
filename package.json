@@ -1,6 +1,6 @@
 {
   "name": "express_portfolio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
@@ -8,14 +8,28 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.1",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
+    "express-session": "^1.17.2",
     "http-errors": "~1.6.3",
     "jquery": "^3.6.0",
     "mongoose": "^5.12.13",
     "morgan": "~1.9.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^6.1.0",
     "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@types/connect-flash": "^0.0.36",
+    "@types/express": "^4.17.12",
+    "@types/express-session": "^1.17.3",
+    "@types/mongoose": "^5.11.97",
+    "@types/passport": "^1.0.6",
+    "@types/passport-local": "^1.0.33",
+    "@types/passport-local-mongoose": "^4.0.14"
   }
 }
